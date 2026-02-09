@@ -52,7 +52,7 @@ nav ul li a:hover {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px 0;
 }
 
@@ -70,10 +70,10 @@ nav ul li a:hover {
 
 .showcase {
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
     display: flex;
     margin: auto;
-    max-width: 1600px; 
+    max-width: 2000px; 
     padding: 0 20px;
 
 }
