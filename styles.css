@@ -16,17 +16,18 @@ p{
 footer {
     width: 100%;
     background-color: #0D0D0D;
-    color: #E5E5E5;
     padding: 30px;
     text-align: center;
     border-top: 1px solid #332B1A;
-    margin-top: 50px; /* Pushes it away from the posters */
 }
 
 body {
     background-color: #121212; /* Dark Obsidian */
     color: #E5E5E5;
     font-family: 'Georgia', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 nav{
@@ -72,7 +73,8 @@ nav ul li a:hover {
     gap: 15px;
     display: flex;
     margin: auto;
-    max-width: 1230px;
+    max-width: 1600px; 
+    padding: 0 20px;
 
 }
 
@@ -83,7 +85,8 @@ nav ul li a:hover {
 
 
 .showcase img {
-    width: 30%;                
+    width: 30%;         
+    max-width: 450px;       
     height: auto;              
     border: 1px solid #332B1A;
     transition: transform 0.3s;
@@ -94,6 +97,7 @@ nav ul li a:hover {
 .categories {
     padding: 50px 0;
     background-color: #1A1A1A;
+    flex: 1;
 }
 
 .main {
