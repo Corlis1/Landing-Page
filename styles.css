@@ -84,6 +84,7 @@ nav ul li a:hover {
 }
 
 
+/*
 .showcase img {
     width: 30%;         
     max-width: 450px;       
@@ -92,6 +93,8 @@ nav ul li a:hover {
     transition: transform 0.3s;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
+    */
+
 
 
 .categories {
@@ -114,3 +117,50 @@ nav ul li a:hover {
     letter-spacing: 2px;
 }
 
+
+
+
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden; /* Hides the images outside the screen */
+    background: #1A1A1A;
+    padding: 20px 0;
+    white-space: nowrap;
+}
+
+.marquee-content {
+    display: inline-flex;
+    gap: 20px;
+    animation: scroll 30s linear infinite; /* Adjust '40s' to change speed */
+}
+
+/* Pause the scroll when the user hovers over an image */
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+.marquee-content img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border: 1px solid #332B1A;
+    transition: transform 0.3s ease;
+}
+
+/* Pop-out effect on hover */
+.marquee-content img:hover {
+    transform: scale(1.2);
+    border-color: #D4AF37;
+    cursor: pointer;
+}
+
+/* The actual movement logic */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%); /* Moves exactly half the width (one full set of images) */
+    }
+}
