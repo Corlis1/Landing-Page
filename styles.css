@@ -187,6 +187,19 @@ nav ul li a:hover {
 }
 /*---IMAGE SCROLLING---*/
 
+/*POSTERS*/
+.poster {
+    display: flex;
+    gap: 50px20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.poster img {
+    width: auto;
+    height: auto;
+}
+/* */
 
 .check-btn {
     display: inline-block;
@@ -205,3 +218,5 @@ nav ul li a:hover {
     background-color: #D4AF37;
     color: #121212;
 }
+
+
