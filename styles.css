@@ -116,7 +116,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    flex: 1;
+    flex: 1;    
 }
 
 .main {
@@ -188,17 +188,29 @@ nav ul li a:hover {
 /*---IMAGE SCROLLING---*/
 
 /*POSTERS*/
+
 .poster {
     display: flex;
-    gap: 50px20px;
+    gap: 30px;
     align-items: center;
-    margin-bottom: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
+
 .poster img {
-    width: auto;
-    height: auto;
+    padding: 50px;
+    width: 600px;
+    height: 800px;
+    object-fit: cover;
+    object-position: top;
 }
+
+.poster div { /*fix longer text from moving the image*/
+    width: 250px;      
+    flex-shrink: 0;
+}
+
 /* */
 
 .check-btn {
