@@ -191,24 +191,32 @@ nav ul li a:hover {
 
 .poster {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+    padding: 0 20px;
 }
 
 
 .poster img {
-    padding: 50px;
     width: 600px;
-    height: 800px;
+    height: auto;
     object-fit: cover;
     object-position: top;
+    border: 2px solid #332B1A;
+    
+}
+
+.poster img:hover {
+    transform: scale(1.03);
+    border-color: #D4AF37;
 }
 
 .poster div { /*fix longer text from moving the image*/
-    width: 250px;      
+    width: 300px;      
     flex-shrink: 0;
+    text-align: left;
 }
 
 /* */
@@ -230,5 +238,3 @@ nav ul li a:hover {
     background-color: #D4AF37;
     color: #121212;
 }
-
-
