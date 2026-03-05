@@ -240,3 +240,14 @@ nav ul li a:hover {
 }
 
 
+
+/* SIZESIZE */
+@media (max-width: 768px) {
+    .navbar, .poster { 
+        flex-direction: column; 
+        text-align: center; 
+    }
+    .poster img { 
+        width: 100%; 
+    }
+}
